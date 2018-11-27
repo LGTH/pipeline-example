@@ -1,0 +1,8 @@
+stages:
+- name: builder
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: example/appv1
+timeout: 60
